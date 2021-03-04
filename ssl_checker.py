@@ -302,7 +302,7 @@ class SSLChecker:
     def export_html(self, context):
         """Export JSON to HTML."""
         html = json2html.convert(json=context)
-        file_name = datetime.strftime(datetime.now(), '%Y_%m_%d_%H_%M_%S')
+        file_name = 'index'
         with open('{}.html'.format(file_name), 'w') as html_file:
             html_file.write(html)
 
